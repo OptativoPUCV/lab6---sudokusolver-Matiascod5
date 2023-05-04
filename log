@@ -625,3 +625,17 @@ Thu 04 May 2023 04:27:18 PM UTC:
  tests:  0|5
 total_score: 0/70
 dc895f6
+Thu 04 May 2023 04:28:14 PM UTC: 
+ sudoku.c | 6 +++---
+ 1 file changed, 3 insertions(+), 3 deletions(-)
+In file included from test.c:5:
+sudoku.c: In function ‘get_adj_nodes’:
+sudoku.c:57:32: error: lvalue required as left operand of assignment
+   57 |         for( int k = 0 ; k < 9 = k++){
+      |                                ^
+sudoku.c:57:37: error: expected ‘;’ before ‘)’ token
+   57 |         for( int k = 0 ; k < 9 = k++){
+      |                                     ^
+      |                                     ;
+Compilation failed
+ca4133d
