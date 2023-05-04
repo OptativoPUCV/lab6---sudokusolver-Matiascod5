@@ -941,3 +941,27 @@ sudoku.c:48:7: error: unused variable ‘contador’ [-Werror=unused-variable]
 cc1: all warnings being treated as errors
 Compilation failed
 4ab400c
+Thu 04 May 2023 05:21:11 PM UTC: 
+ sudoku.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:5:
+sudoku.c: In function ‘is_valid’:
+sudoku.c:48:10: error: expected ‘;’ before ‘int’
+   48 |   int aux
+      |          ^
+      |          ;
+   49 |   int filas[10];
+      |   ~~~     
+sudoku.c:59:7: error: ‘aux’ undeclared (first use in this function)
+   59 |       aux = n->sudo[i][j];
+      |       ^~~
+sudoku.c:59:7: note: each undeclared identifier is reported only once for each function it appears in
+sudoku.c:50:7: error: variable ‘columnas’ set but not used [-Werror=unused-but-set-variable]
+   50 |   int columnas[10];
+      |       ^~~~~~~~
+sudoku.c:49:7: error: variable ‘filas’ set but not used [-Werror=unused-but-set-variable]
+   49 |   int filas[10];
+      |       ^~~~~
+cc1: all warnings being treated as errors
+Compilation failed
+4eb84a3
