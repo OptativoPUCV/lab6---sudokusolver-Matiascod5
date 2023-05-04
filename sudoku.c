@@ -44,7 +44,7 @@ void print_node(Node* n){
 }
 
 int is_valid(Node* n){
-  /*int i,j,k,aux,contador = 0;
+  int i,j,k,aux,contador = 0;
   int arreglo[10];
   for ( i = 0 ; i < 10 ; i++){
     arreglo[i] = 0;
@@ -64,7 +64,7 @@ int is_valid(Node* n){
         }
       }
     }
-  }*/
+  }
   return 1;
 }
 
