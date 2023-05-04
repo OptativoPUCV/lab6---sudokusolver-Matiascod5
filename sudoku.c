@@ -53,7 +53,7 @@ List* get_adj_nodes(Node* n){
   List* list=createList();
   int j;
   int h;
-  int i
+  int i;
   for( i = 0; i < 9 ; i++){
     Node* b = copy( n);
     j = 2 + i;
