@@ -142,6 +142,7 @@ Node* DFS(Node* initial, int* cont){
     Node* completos = first(papas);
     while( completos != NULL){
       push( S, completos);
+      completos = next( papas);
     }
     
   }
