@@ -1272,3 +1272,13 @@ sudoku.c:99:27: note: expected ‘Node *’ but argument is of type ‘int *’
 cc1: all warnings being treated as errors
 Compilation failed
 148ae4a
+Thu 04 May 2023 11:44:53 PM UTC: 
+ sudoku.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:5:
+sudoku.c: In function ‘DFS’:
+sudoku.c:136:16: error: void value not ignored as it ought to be
+  136 |      Node* n = pop(S);
+      |                ^~~
+Compilation failed
+ff89149
