@@ -121,3 +121,17 @@ sudoku.c:54:3: note: within this loop
 cc1: all warnings being treated as errors
 Compilation failed
 d70f70f
+Thu 04 May 2023 03:55:14 AM UTC: 
+ sudoku.c | 3 ++-
+ 1 file changed, 2 insertions(+), 1 deletion(-)
+In file included from test.c:5:
+sudoku.c: In function ‘get_adj_nodes’:
+sudoku.c:57:5: error: expected ‘,’ or ‘;’ before ‘b’
+   57 |     b->sudo[0][j] = i + 1;
+      |     ^
+sudoku.c:56:9: error: unused variable ‘j’ [-Werror=unused-variable]
+   56 |     int j = 2 + i
+      |         ^
+cc1: all warnings being treated as errors
+Compilation failed
+e1b18b1
