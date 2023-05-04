@@ -268,3 +268,17 @@ sudoku.c:57:3: note: within this loop
 cc1: all warnings being treated as errors
 Compilation failed
 0cf306e
+Thu 04 May 2023 04:00:51 AM UTC: 
+ sudoku.c | 4 +---
+ 1 file changed, 1 insertion(+), 3 deletions(-)
+In file included from test.c:5:
+sudoku.c: In function ‘get_adj_nodes’:
+sudoku.c:55:7: error: unused variable ‘h’ [-Werror=unused-variable]
+   55 |   int h;
+      |       ^
+sudoku.c:59:20: error: ‘j’ is used uninitialized in this function [-Werror=uninitialized]
+   59 |     if ( b->sudo[0][j] == 0){
+      |          ~~~~~~~~~~^~~
+cc1: all warnings being treated as errors
+Compilation failed
+d47fae2
