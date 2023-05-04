@@ -79,10 +79,11 @@ List* get_adj_nodes(Node* n){
         b->sudo[i][j] = k + 1;
         pushBack( list, b);
         }
-        return list;
+
       }
     }
   }
+  return list;
 }
 
 int is_final(Node* n){
