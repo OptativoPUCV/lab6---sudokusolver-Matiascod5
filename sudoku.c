@@ -53,7 +53,7 @@ int is_valid(Node* n){
   for ( i = 0 ; i < 9 ; i++){
     for ( a = 0 ; a < 10 ; a++){
       filas[a] = 0;
-      columnas[a] = 0
+      columnas[a] = 0;
     }
     for( j = 0 ; j < 9 ; j++){
       aux = n->sudo[i][j];
