@@ -1146,3 +1146,44 @@ sudoku.c:141:11: error: unused variable ‘completos’ [-Werror=unused-variable
 cc1: all warnings being treated as errors
 Compilation failed
 9702410
+Thu 04 May 2023 11:43:54 PM UTC: 
+ sudoku.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:5:
+sudoku.c: In function ‘DFS’:
+sudoku.c:136:6: error: unknown type name ‘node’; did you mean ‘Node’?
+  136 |      node* n = pop(S);
+      |      ^~~~
+      |      Node
+sudoku.c:136:16: error: void value not ignored as it ought to be
+  136 |      node* n = pop(S);
+      |                ^~~
+sudoku.c:137:19: error: passing argument 1 of ‘is_final’ from incompatible pointer type [-Werror=incompatible-pointer-types]
+  137 |     if ( is_final(n)){
+      |                   ^
+      |                   |
+      |                   int *
+sudoku.c:118:20: note: expected ‘Node *’ but argument is of type ‘int *’
+  118 | int is_final(Node* n){
+      |              ~~~~~~^
+sudoku.c:138:14: error: returning ‘int *’ from a function with incompatible return type ‘Node *’ [-Werror=incompatible-pointer-types]
+  138 |       return n;
+      |              ^
+sudoku.c:140:33: error: passing argument 1 of ‘get_adj_nodes’ from incompatible pointer type [-Werror=incompatible-pointer-types]
+  140 |     List* papas = get_adj_nodes(n);
+      |                                 ^
+      |                                 |
+      |                                 int *
+sudoku.c:99:27: note: expected ‘Node *’ but argument is of type ‘int *’
+   99 | List* get_adj_nodes(Node* n){
+      |                     ~~~~~~^
+sudoku.c:142:25: error: ‘null’ undeclared (first use in this function)
+  142 |     while( completos != null)
+      |                         ^~~~
+sudoku.c:142:25: note: each undeclared identifier is reported only once for each function it appears in
+sudoku.c:144:3: error: expected expression before ‘}’ token
+  144 |   }
+      |   ^
+cc1: all warnings being treated as errors
+Compilation failed
+227f598
