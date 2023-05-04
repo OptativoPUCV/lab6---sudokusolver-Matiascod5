@@ -139,7 +139,9 @@ Node* DFS(Node* initial, int* cont){
     }
     List* papas = get_adj_nodes(n);
     Node* completos = first(papas);
-    while( completos != null)
+    while( completos != NULL){
+      push( completos);
+    }
     
   }
   
