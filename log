@@ -282,3 +282,14 @@ sudoku.c:59:20: error: ‘j’ is used uninitialized in this function [-Werror=u
 cc1: all warnings being treated as errors
 Compilation failed
 d47fae2
+Thu 04 May 2023 04:01:08 AM UTC: 
+ sudoku.c | 4 ++--
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+In file included from test.c:5:
+sudoku.c: In function ‘get_adj_nodes’:
+sudoku.c:59:21: error: ‘j’ undeclared (first use in this function)
+   59 |     if ( b->sudo[0][j] == 0){
+      |                     ^
+sudoku.c:59:21: note: each undeclared identifier is reported only once for each function it appears in
+Compilation failed
+c4e9959
