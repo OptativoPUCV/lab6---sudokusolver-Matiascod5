@@ -66,7 +66,7 @@ int is_valid(Node* n){
         }
       }
       aux2 = n->sudo[j][i];
-      if ( aux != 0){
+      if ( aux2 != 0){
         if (columnas[aux2] == 0){
           columnas[aux2] = 1;
         }
