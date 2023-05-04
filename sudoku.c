@@ -132,7 +132,7 @@ Node* DFS(Node* initial, int* cont){
   // lo saque del ppt 
   Stack* S=createStack();
   push(S, initial);
-  while (is_empty(S) != 0){
+  while (is_empty(S) = 0){
     Node* n = top(S);
     pop(S);
     if ( is_final(n)){

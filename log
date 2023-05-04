@@ -1294,3 +1294,13 @@ Thu 04 May 2023 11:46:18 PM UTC:
  tests:  7|1
 total_score: 55/70
 691dff3
+Thu 04 May 2023 11:46:47 PM UTC: 
+ sudoku.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:5:
+sudoku.c: In function ‘DFS’:
+sudoku.c:135:22: error: lvalue required as left operand of assignment
+  135 |   while (is_empty(S) = 0){
+      |                      ^
+Compilation failed
+690542a
