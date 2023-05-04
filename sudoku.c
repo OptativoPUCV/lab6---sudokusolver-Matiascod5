@@ -44,14 +44,14 @@ void print_node(Node* n){
 }
 
 int is_valid(Node* n){
-  int i,j,k,aux,contador = 0;
+  /*int i,j,k,aux,contador = 0;
   int arreglo[10];
   for ( i = 0 ; i < 10 ; i++){
     arreglo[i] = 0;
   }
   
   for ( i = 0 ; i < 9 ; i++){
-    /*contador = 0;
+    contador = 0;
     for( j = 0 ; j < 9 ; j++){
       arreglo[j] = n->sudo[i][j];
       aux = n->sudo[i][j];
