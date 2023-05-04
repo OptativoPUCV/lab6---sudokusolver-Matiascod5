@@ -57,9 +57,12 @@ List* get_adj_nodes(Node* n){
   for( i = 0; i < 9 ; i++){
     Node* b = copy( n);
     j = 2 + i;
-    h = i + 1;
-    b->sudo[0][j] = h;
-    pushBack( list, b);
+     h = i + 1;
+    if ( b->sudo[0][j] == 0){
+      b->sudo[0][j] = h;
+      pushBack( list, b);
+    }
+    
   }
   
   return list;
