@@ -328,3 +328,21 @@ Thu 04 May 2023 04:03:29 AM UTC:
  tests:  0|5
 total_score: 0/70
 c58b942
+Thu 04 May 2023 04:10:41 AM UTC: 
+ sudoku.c | 10 +++++-----
+ 1 file changed, 5 insertions(+), 5 deletions(-)
+In file included from test.c:5:
+sudoku.c: In function ‘get_adj_nodes’:
+sudoku.c:57:10: error: ‘b’ undeclared (first use in this function)
+   57 |     if ( b->sudo[0][i] == 0){
+      |          ^
+sudoku.c:57:10: note: each undeclared identifier is reported only once for each function it appears in
+sudoku.c:61:7: error: expected expression before ‘}’ token
+   61 |       }
+      |       ^
+sudoku.c:54:7: error: unused variable ‘aux’ [-Werror=unused-variable]
+   54 |   int aux = 1;
+      |       ^~~
+cc1: all warnings being treated as errors
+Compilation failed
+3a9b181
