@@ -45,20 +45,25 @@ void print_node(Node* n){
 
 int is_valid(Node* n){
   int i,j,a;
-  //int contador = 0 , aux , k;
-  int arreglo[10];
+  int contador = 0 , aux , k;
+  int filas[10];
+  int columnas[10];
 
   
   for ( i = 0 ; i < 9 ; i++){
     for ( a = 0 ; a < 10 ; a++){
-      arreglo[a] = 0;
+      filas[a] = 0;
+      columnas[a] = 0
     }
-    //contador = 0;
     for( j = 0 ; j < 9 ; j++){
-      arreglo[j] = n->sudo[i][j];
-      //aux = n->sudo[i][j];
-      if ( arreglo[j] == 0){
-        return 0;
+      aux = n->sudo[i][j];
+      if ( aux != 0){
+        if (filas[num] == 0){
+          filas[num] = 1;
+        }
+        else{
+          return 0;
+        }
       }
     }
   }
