@@ -44,7 +44,7 @@ void print_node(Node* n){
 }
 
 int is_valid(Node* n){
-  int i,j,k,a,aux;
+  int i,j,a;
   //int contador = 0 , aux , k;
   int arreglo[10];
 
