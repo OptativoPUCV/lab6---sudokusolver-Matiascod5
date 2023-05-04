@@ -77,7 +77,7 @@ int is_valid(Node* n){
     for ( a = 0 ; a < 10 ; a++){
       matriz[a] = 0;
     }
-     for ( int p = 0 ; p < 9 ; p++){
+    for ( int p = 0 ; p < 9 ; p++){
       int i=3*(k/3) + (p/3) ;
       int j=3*(k%3) + (p%3) ;
       aux = n->sudo[i][j];
@@ -91,7 +91,6 @@ int is_valid(Node* n){
       }
     }
   }
-  
   return 1;
 }
 
@@ -103,9 +102,12 @@ List* get_adj_nodes(Node* n){
     for( int j = 0 ; j < 9 ; j++){
       if ( n->sudo[i][j] == 0){
         for( int k = 0 ; k < 9 ; k++){
-        Node* b = copy( n);
-        b->sudo[i][j] = k + 1;
-        pushBack( list, b);
+          Node* b = copy( n);
+          b->sudo[i][j] = k + 1;
+          if ( is_valid( b)){
+            pushBack( list, b);
+          }
+        
         }
         return list;
       }
