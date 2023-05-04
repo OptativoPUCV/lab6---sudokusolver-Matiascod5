@@ -137,6 +137,10 @@ Node* DFS(Node* initial, int* cont){
     if ( is_final(n)){
       return n;
     }
+    List* papas = get_adj_nodes(n);
+    Node* completos = first(papas);
+    while()
+    
   }
   
   return NULL;
