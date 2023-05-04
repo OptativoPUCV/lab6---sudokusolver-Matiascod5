@@ -52,10 +52,9 @@ int is_valid(Node* n){
 List* get_adj_nodes(Node* n){
   List* list=createList();
   for( int i = 0 ; i < 9 ; i++){
-    Node* b = copy( n);
-    if ( b->sudo[0][i] == 0){
-      
-      for( int j = 0 ; j == 9 ; j++){
+    if ( n->sudo[0][i] == 0){
+      Node* b = copy( n);
+      for( int j = 0 ; j < 9 ; j++){
         b->sudo[0][i] = j + 1 ;
         pushBack( list, b);
       }
