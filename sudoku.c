@@ -51,7 +51,7 @@ int is_valid(Node* n){
   }
   
   for ( i = 0 ; i < 9 ; i++){
-    contador = 0;
+    /*contador = 0;
     for( j = 0 ; j < 9 ; j++){
       arreglo[j] = n->sudo[i][j];
       aux = n->sudo[i][j];
@@ -64,7 +64,7 @@ int is_valid(Node* n){
         }
       }
     }
-  }
+  }*/
   return 1;
 }
 
