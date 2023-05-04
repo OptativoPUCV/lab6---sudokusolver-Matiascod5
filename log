@@ -135,3 +135,17 @@ sudoku.c:56:9: error: unused variable ‘j’ [-Werror=unused-variable]
 cc1: all warnings being treated as errors
 Compilation failed
 e1b18b1
+Thu 04 May 2023 03:55:22 AM UTC: 
+ sudoku.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:5:
+test.c: In function ‘get_adj_nodes’:
+sudoku.c:57:19: error: iteration 7 invokes undefined behavior [-Werror=aggressive-loop-optimizations]
+   57 |     b->sudo[0][j] = i + 1;
+      |     ~~~~~~~~~~~~~~^~~~~~~
+sudoku.c:54:3: note: within this loop
+   54 |   for( int i = 0; i < 9 ; i++){
+      |   ^~~
+cc1: all warnings being treated as errors
+Compilation failed
+32afb49
