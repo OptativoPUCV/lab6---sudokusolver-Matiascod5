@@ -58,7 +58,7 @@ List* get_adj_nodes(Node* n){
     if ( b->sudo[0][i] == 0){
       b->sudo[0][i] = aux ;
       pushBack( list, b);
-      aux++;
+      //aux++;
     }
     
   }
