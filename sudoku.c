@@ -44,8 +44,8 @@ void print_node(Node* n){
 }
 
 int is_valid(Node* n){
-
-    return 1;
+  
+  return 1;
 }
 
 
@@ -59,12 +59,11 @@ List* get_adj_nodes(Node* n){
         b->sudo[i][j] = k + 1;
         pushBack( list, b);
         }
+      return list;
       }
     }
   }
-  return list;
 }
-
 
 int is_final(Node* n){
     return 0;
