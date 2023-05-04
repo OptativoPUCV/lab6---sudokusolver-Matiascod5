@@ -782,3 +782,9 @@ sudoku.c:48:7: error: variable ‘arreglo’ set but not used [-Werror=unused-bu
 cc1: all warnings being treated as errors
 Compilation failed
 749bc35
+Thu 04 May 2023 04:59:33 PM UTC: 
+ sudoku.c | 1 +
+ 1 file changed, 1 insertion(+)
+ tests:  2|4
+total_score: 15/70
+d930fab

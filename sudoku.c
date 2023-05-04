@@ -48,6 +48,7 @@ int is_valid(Node* n){
   int arreglo[10];
   for ( i = 0 ; i < 10 ; i++){
     arreglo[i] = 0;
+    printf ( " %i\n", arreglo[i]);
   }
   
   for ( i = 0 ; i < 9 ; i++){
