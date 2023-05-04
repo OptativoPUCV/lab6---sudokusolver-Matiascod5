@@ -45,6 +45,7 @@ void print_node(Node* n){
 
 int is_valid(Node* n){
   int i,j,k,a,aux,contador = 0;
+  //int contador = 0 , aux , k;
   int arreglo[10];
 
   
@@ -52,10 +53,10 @@ int is_valid(Node* n){
     for ( a = 0 ; a < 10 ; a++){
       arreglo[a] = 0;
     }
-    contador = 0;
+    //contador = 0;
     for( j = 0 ; j < 9 ; j++){
       arreglo[j] = n->sudo[i][j];
-      aux = n->sudo[i][j];
+      //aux = n->sudo[i][j];
       if ( arreglo[j] == 0){
         return 0;
       }
