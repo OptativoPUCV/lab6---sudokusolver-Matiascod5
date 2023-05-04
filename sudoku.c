@@ -52,7 +52,7 @@ int is_valid(Node* n){
 List* get_adj_nodes(Node* n){
     List* list=createList();
     while( n ){
-    if ( n.first != NULL){
+    if ( n->first != NULL){
       pushback( list, n);
     }
 
