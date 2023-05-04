@@ -55,7 +55,7 @@ List* get_adj_nodes(Node* n){
     if ( n->sudo[0][i] == 0){
       Node* b = copy( n);
       for( int j = 0 ; j < 9 ; j++){
-        b->sudo[0][i] = j + 1 ;
+        b->sudo[0][i] = 4 ;
         pushBack( list, b);
       }
       return list;
