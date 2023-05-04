@@ -17,3 +17,18 @@ sudoku.c:56:7: error: implicit declaration of function ‘push_back’; did you 
 cc1: all warnings being treated as errors
 Compilation failed
 d2ff5e9
+Thu 04 May 2023 03:44:26 AM UTC: 
+ sudoku.c | 4 ++--
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+In file included from test.c:5:
+sudoku.c: In function ‘get_adj_nodes’:
+sudoku.c:55:11: error: ‘Node’ has no member named ‘first’
+   55 |     if ( n->first != NULL){
+      |           ^~
+sudoku.c:56:7: error: implicit declaration of function ‘pushback’; did you mean ‘pushBack’? [-Werror=implicit-function-declaration]
+   56 |       pushback( list, n);
+      |       ^~~~~~~~
+      |       pushBack
+cc1: all warnings being treated as errors
+Compilation failed
+1edbdea
