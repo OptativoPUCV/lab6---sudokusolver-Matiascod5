@@ -2,3 +2,18 @@ Thu 04 May 2023 02:56:24 AM UTC:
  tests:  0|5
 total_score: 0/70
 96bcda4
+Thu 04 May 2023 03:41:45 AM UTC: 
+ sudoku.c | 6 ++++++
+ 1 file changed, 6 insertions(+)
+In file included from test.c:5:
+sudoku.c: In function ‘get_adj_nodes’:
+sudoku.c:55:11: error: ‘Node’ has no member named ‘next’
+   55 |     if ( n->next != NULL){
+      |           ^~
+sudoku.c:56:7: error: implicit declaration of function ‘push_back’; did you mean ‘pushBack’? [-Werror=implicit-function-declaration]
+   56 |       push_back( list, n);
+      |       ^~~~~~~~~
+      |       pushBack
+cc1: all warnings being treated as errors
+Compilation failed
+d2ff5e9
