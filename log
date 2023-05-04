@@ -63,3 +63,25 @@ sudoku.c:56:7: error: implicit declaration of function ‘pushback’; did you m
 cc1: all warnings being treated as errors
 Compilation failed
 63fc928
+Thu 04 May 2023 03:53:02 AM UTC: 
+ sudoku.c | 8 ++++----
+ 1 file changed, 4 insertions(+), 4 deletions(-)
+In file included from test.c:5:
+sudoku.c: In function ‘get_adj_nodes’:
+sudoku.c:55:14: error: invalid initializer
+   55 |     Node b = copy( n);
+      |              ^~~~
+sudoku.c:56:6: error: subscripted value is neither array nor pointer nor vector
+   56 |     b[0][i] = i + 1;
+      |      ^
+sudoku.c:57:21: error: incompatible type for argument 2 of ‘pushBack’
+   57 |     pushBack( list, b);
+      |                     ^
+      |                     |
+      |                     Node
+In file included from test.c:4:
+list.h:23:33: note: expected ‘void *’ but argument is of type ‘Node’
+   23 | void pushBack(List* list, void* data);
+      |                           ~~~~~~^~~~
+Compilation failed
+48b09e3

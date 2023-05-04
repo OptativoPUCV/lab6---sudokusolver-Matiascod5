@@ -50,14 +50,14 @@ int is_valid(Node* n){
 
 
 List* get_adj_nodes(Node* n){
-    List* list=createList();
-    while( n ){
-    if ( n->first != NULL){
-      pushback( list, n);
-    }
-
-    }
-    return list;
+  List* list=createList();
+  for( int i = 0; i < 9 ; i++){
+    Node b = copy( n);
+    b[0][i] = i + 1;
+    pushBack( list, b);
+  }
+  
+  return list;
 }
 
 
